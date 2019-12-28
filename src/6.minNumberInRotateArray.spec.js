@@ -1,4 +1,4 @@
-const {minNumberInRotateArray} = require('./minNumberInRotateArray')
+const {minNumberInRotateArray} = require('./6.minNumberInRotateArray')
 
 test('minNumberInRotateArray test case', () => {
     const array = [3,4,5,1,2]
