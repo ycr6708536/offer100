@@ -7,15 +7,31 @@ NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
 https://www.nowcoder.com/practice/9f3231a991af4f55b95579b44b7a01ba?tpId=13&tqId=11159&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking
 * */
 /**
- * 二分查找 
- * @param {Array} rotateArray 
+ * 二分查找
+ * @param {Array} rotateArray
  */
 function minNumberInRotateArray(rotateArray) {
   if (rotateArray.length === 0) return 0;
   if (rotateArray.length === 1) return rotateArray[0];
 
   let l = 0;
-  let r = rotateArray.length-1;
+  let r = rotateArray.length - 1;
+
+  while (l<r) {
+    if(l+1 === r) {
+      return rotateArray[r]
+    }
+
+    let mid = Math.floor((l + r) / 2);
+    if (rotateArray[mid] >= rotateArray[l]) {
+      l = mid;
+    } else if (rotateArray[mid] <= rotateArray[r]) {
+      r = mid;
+    } else {
+      return rotateArray[mid];
+    }
+  }
+  return rotateArray[0];
   // TODO 明天实现
 }
 module.exports = {
