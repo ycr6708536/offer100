@@ -21,3 +21,4 @@ jobs:
     - run: npm run test:cover
       env:
         CI: true
+    - run: npm run coveralls
