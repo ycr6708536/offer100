@@ -27,11 +27,8 @@ function minNumberInRotateArray(rotateArray) {
       l = mid;
     } else if (rotateArray[mid] <= rotateArray[r]) {
       r = mid;
-    } else {
-      return rotateArray[mid];
     }
   }
-  return rotateArray[0];
 }
 module.exports = {
   minNumberInRotateArray: minNumberInRotateArray,
