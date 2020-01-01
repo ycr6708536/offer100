@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest -o --watch --colors"
+    "test:watch": "jest -o --watch --colors",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "test:cover": "jest --collect-coverage"
   },
   "jest": {
     "testEnvironment": "node"
@@ -14,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.23",
+    "coveralls": "^3.0.9",
     "jest": "^24.9.0"
   }
 }
