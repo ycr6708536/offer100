@@ -7,4 +7,6 @@ test('minNumberInRotateArray test case', () => {
 
     const array2 = [3,4,5,1,2]
     expect(minNumberInRotateArray(array2)).toBe(1)
+    const array2 = [4,5,1,2,3]
+    expect(minNumberInRotateArray(array2)).toBe(1)
 })

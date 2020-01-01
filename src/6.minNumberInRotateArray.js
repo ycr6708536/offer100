@@ -32,7 +32,6 @@ function minNumberInRotateArray(rotateArray) {
     }
   }
   return rotateArray[0];
-  // TODO 明天实现
 }
 module.exports = {
   minNumberInRotateArray: minNumberInRotateArray,

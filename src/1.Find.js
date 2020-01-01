@@ -41,8 +41,6 @@ function Find(target, array) {
       return false;
     }
   }
-
-  return false;
 }
 module.exports = {
   Find: Find,

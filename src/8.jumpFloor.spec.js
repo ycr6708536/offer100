@@ -1,6 +1,7 @@
 const {jumpFloor} = require('./8.jumpFloor')
 
 test('jumpFloor test case', () => {
+    expect(jumpFloor(0)).toBe(0)
     expect(jumpFloor(1)).toBe(1)
     expect(jumpFloor(2)).toBe(2)
     expect(jumpFloor(3)).toBe(3)
